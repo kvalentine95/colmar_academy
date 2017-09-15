@@ -1,0 +1,270 @@
+/* Universal Styles */
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+/*div {
+  border: 1px solid black;
+}*/
+.right{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+}
+.schedule-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.schedule-container .content{
+  width: 65%;
+}
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 1.5rem;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo span{
+  font-family: Avenir, sans-serif;
+  line-height: 2rem;
+  color: #4a4a4a;
+}
+
+header .logo .bold{
+  font-weight: bold;
+  color: black;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+
+/* Banner Section */
+#learn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #D3D3D3;
+}
+
+.banner .start {
+  font-family: Avenir;
+  width: 40%;
+}
+
+.banner .start h1{
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #4d4d4d;
+  padding-bottom: 1.5rem;
+}
+
+.banner .start h4{
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: #4d4d4d;
+  padding-bottom: 1.5rem;
+}
+
+.banner .start h5 {
+  background-color: #4d4d4d;
+  color: white;
+  line-height: 1.4;
+  text-align: center;
+  padding: 0.5rem;
+  width: 82%;
+}
+/* Information Section */
+
+#information {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.left .content h2 {
+  font-weight: 900;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #4d4d4d;
+  font-family: Avenir;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.left .content p{
+  color: #4d4d4d;
+  font-family: Avenir;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.left .content h5{
+  color: #4d4d4d;
+  font-size: 0.8rem;
+  font-family: Avenir;
+}
+
+.right {
+  margin-top: 1rem;
+  font-family: Avenir;
+}
+
+.schedule-container .image{
+  width: 35%;
+  padding: 1rem;
+}
+
+.schedule-container img {
+  width: 100%;
+}
+
+.schedule-container .content {
+  align-self: center;
+}
+
+.content h4{
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: #4d4d4d;
+}
+.schedule-container .content p {
+  color: #4d4d4d;
+  font-family: Avenir;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+.schedule-container .content .add{
+  color:#1E90FF;
+}
+
+/* Course Section */
+#courses {
+  display: flex;
+  flex-direction: column;
+  background-color: #d3d3d3;
+  align-items: center;
+}
+
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.course-container {
+  width: 30%;
+  margin: 1rem;
+}
+.course-container img {
+  width: 35%;
+}
+/* Thesis Section */
+  #thesis .content-container .video-container video{
+    width: 60%;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: row;
+  }
+/* Footer */
+
+footer {
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 760px) {
+  footer .content {
+    font-size: .625rem;
+  }
+}
