@@ -56,12 +56,10 @@ html {
 .schedule-container .content{
   width: 65%;
 }
-
-@media only screen and (max-width: 760px) {
-  .main-content {
-    top: 2.5625rem;
-  }
+.logo .mobile {
+  display: none;
 }
+
 
 /* Header */
 
@@ -142,7 +140,7 @@ nav a {
 }
 
 .banner .start h5 {
-  background-color: #4d4d4d;
+  background-color: #999999;
   color: white;
   line-height: 1.4;
   text-align: center;
@@ -184,6 +182,9 @@ nav a {
 .right {
   margin-top: 1rem;
   font-family: Avenir;
+}
+.schedule-container .image .mobile {
+  display: none;
 }
 
 .schedule-container .image{
@@ -233,8 +234,6 @@ nav a {
   line-height: 1.2;
   color: #4d4d4d;
   font-family: Avenir;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
 }
 .list {
   display: flex;
@@ -266,6 +265,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f9f9f9;
 }
 
 #thesis .content-container .video-container{
@@ -287,12 +287,12 @@ nav a {
 /* Footer */
 
 footer {
-  background-color: #9b9b9b;
+  background-color: #f9f9f9;
   padding: 1.5rem 2rem;
 }
 
 footer .content {
-  color: white;
+  color: #666666;
   display: flex;
   font-size: .75rem;
 }
@@ -302,7 +302,117 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 760px) {
+  .desk {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    align-items: flex-end;
+  }
+  #courses {
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+  .course-container {
+    min-width: 100%;
+    padding: 0;
+    margin: 0.25rem 0;
+    display: inline-block;
+  }
+  .course-container h4 {
+    padding: 1.5rem 1rem;
+  }
+  .course-container img, .course-container p {
+    display: none;
+  }
+  .list {
+    flex-direction: column;
+    min-width: 100%;
+    padding-top: 2rem;
+  }
+  #thesis .content-container .right{
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  #learn {
+    flex-direction: column;
+  }
+  .banner .left {
+    min-width: 100%;
+    padding: 0;
+  }
+  .banner .start {
+    min-width: 100%;
+    margin-left: 2rem;
+  }
+  .banner .start h1 {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+  .banner .start h4 {
+    font-size: 1.9rem;
+  }
+  .banner .start h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  #information .left {
+    display: none;
+  }
+  #information .right {
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #information .schedule-container {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .schedule-container img {
+    display: none;
+  }
+  .schedule-container .image {
+    min-width: 90%;
+    padding: 0;
+  }
+  .schedule-container .image .mobile {
+    display: block;
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .schedule-container .content {
+    width: 85%;
+    margin-left: 2rem;
+    padding-right: 1rem;
+  }
+  .content h4 {
+    font-size: 1.8rem;
+  }
+  .schedule-container .content p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  #thesis .content-container .container {
+    display: none;
+  }
+  #thesis .left {
+    min-width: 100%;
+    padding: 0;
+    padding-top: 2rem;
+  }
+  #thesis h1 {
+    padding-top: 2rem;
+  }
+  .terms {
+    display: none;
+  }
   footer .content {
-    font-size: .625rem;
+    font-size: 1rem;
   }
 }
