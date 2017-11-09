@@ -39,10 +39,7 @@ html {
   padding: 2rem 1.5rem;
 }
 
-/*div {
-  border: 1px solid black;
-}*/
-.right{
+.right {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -51,12 +48,19 @@ html {
 .schedule-container {
   display: flex;
   flex-direction: row;
+  padding-right: 1.5rem;
+  transition: background-color linear 750ms;
 }
 
 .schedule-container .content{
   width: 65%;
 }
-.logo .mobile {
+
+.schedule-container:hover {
+  background-color: #d9d9d8;
+}
+
+.content .mobile {
   display: none;
 }
 
@@ -140,7 +144,7 @@ nav a {
 }
 
 .banner .start h5 {
-  background-color: #999999;
+  background-color: #4d4d4d;
   color: white;
   line-height: 1.4;
   text-align: center;
@@ -153,7 +157,7 @@ nav a {
   display: flex;
   flex-direction: row;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #f3f3f1;
 }
 
 .left .content h2 {
@@ -170,6 +174,7 @@ nav a {
   color: #4d4d4d;
   font-family: Avenir;
   font-size: 1rem;
+  line-height: 1.2;
   padding-bottom: 1.5rem;
 }
 
@@ -200,7 +205,8 @@ nav a {
   align-self: center;
 }
 
-.content h4, .course-container h4, .left .container h4{
+.content h4, .course-container h4, .left .container h4 {
+  font-family: Avenir;
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 1.3;
@@ -210,6 +216,7 @@ nav a {
   color: #4d4d4d;
   font-family: Avenir;
   font-size: 1rem;
+  line-height: 1.2;
   padding: 0.5rem 0;
 }
 
@@ -221,11 +228,9 @@ nav a {
 #courses {
   display: flex;
   flex-direction: column;
-  background-color: #d3d3d3;
+  background-color: #d9d9d8;
   align-items: center;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-  padding-bottom: 2rem;
+  padding: 2rem 3.5rem;
 }
 
 #courses h1, #thesis h1{
@@ -240,6 +245,7 @@ nav a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 1rem;
 }
 .course-container {
   max-width: 30%;
@@ -258,14 +264,15 @@ nav a {
 }
 
 .course-container p{
-  padding-left: 1rem;
+  padding: 0.5rem 1rem;
 }
 /* Thesis Section */
-#thesis{
+#thesis {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: #f3f3f1;
+  padding-top: 2rem;
 }
 
 #thesis .content-container .video-container{
@@ -287,8 +294,9 @@ nav a {
 /* Footer */
 
 footer {
-  background-color: #f9f9f9;
-  padding: 1.5rem 2rem;
+  background-color: #f3f3f1;
+  padding: 1rem 1.5rem;
+  border-top: solid 1px #c6c1c1;
 }
 
 footer .content {
@@ -300,14 +308,24 @@ footer .content {
 footer .copyright {
   flex-grow: 1;
 }
+footer .terms span {
+  padding-right: 0.5rem;
+}
 
 @media only screen and (max-width: 760px) {
-  .desk {
+  .content .logo {
     display: none;
   }
-  .logo {
+  header .content .mobile {
     display: flex;
-    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #information, #courses, #thesis, footer {
+    background-color: #F3F5F5;
+  }
+  #information, #courses {
+    border-bottom: solid 1px #c6c1c1;
   }
   #courses {
     margin: 0;
@@ -318,6 +336,7 @@ footer .copyright {
     padding: 0;
     margin: 0.25rem 0;
     display: inline-block;
+    background-color: #D3D3D3;
   }
   .course-container h4 {
     padding: 1.5rem 1rem;
@@ -328,7 +347,7 @@ footer .copyright {
   .list {
     flex-direction: column;
     min-width: 100%;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   #thesis .content-container .right{
     display: none;
@@ -359,19 +378,18 @@ footer .copyright {
     font-weight: 600;
     padding: 1rem;
     margin-bottom: 2rem;
+    background-color: #919190;
   }
   #information .left {
     display: none;
   }
   #information .right {
     min-width: 100%;
-    justify-content: center;
-    align-items: center;
   }
   #information .schedule-container {
     flex-direction: column;
     width: 100%;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
   .schedule-container img {
     display: none;
@@ -404,15 +422,17 @@ footer .copyright {
   #thesis .left {
     min-width: 100%;
     padding: 0;
-    padding-top: 2rem;
-  }
-  #thesis h1 {
-    padding-top: 2rem;
+    padding: 1.5rem 0;
   }
   .terms {
     display: none;
   }
+  footer {
+    border: 0;
+  }
   footer .content {
     font-size: 1rem;
+    font-family: Avenir;
+    padding: 1rem 0;
   }
 }
